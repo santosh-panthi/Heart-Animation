@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+}
+span {
+  background-image: url("https://cdn4.iconfinder.com/data/icons/essentials-72/24/028_-_Heart-512.png");
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  pointer-events: none;
+  animation: anime 6s linear ;
+  height: 150px;
+  width: 150px;
+}
+
+@keyframes anime {
+    0%{
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+    
+    100%{
+        transform: translate(-50%, -5000%);
+        opacity: 0;
+        filter: hue-rotate(900deg);
+    }
+    
+}
